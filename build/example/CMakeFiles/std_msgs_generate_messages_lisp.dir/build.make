@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ken/test/src
+CMAKE_SOURCE_DIR = /home/aa/test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ken/test/build
+CMAKE_BINARY_DIR = /home/aa/test/build
 
 # Utility rule file for std_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ example/CMakeFiles/std_msgs_generate_messages_lisp.dir/build: std_msgs_generate_
 .PHONY : example/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 
 example/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	cd /home/ken/test/build/example && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/aa/test/build/example && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 example/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend:
-	cd /home/ken/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ken/test/src /home/ken/test/src/example /home/ken/test/build /home/ken/test/build/example /home/ken/test/build/example/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aa/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aa/test/src /home/aa/test/src/example /home/aa/test/build /home/aa/test/build/example /home/aa/test/build/example/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 

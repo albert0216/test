@@ -67,14 +67,14 @@ set(example_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(example_SOURCE_PREFIX /home/ken/test/src/example)
-  set(example_DEVEL_PREFIX /home/ken/test/devel)
+  set(example_SOURCE_PREFIX /home/aa/test/src/example)
+  set(example_DEVEL_PREFIX /home/aa/test/devel)
   set(example_INSTALL_PREFIX "")
   set(example_PREFIX ${example_DEVEL_PREFIX})
 else()
   set(example_SOURCE_PREFIX "")
   set(example_DEVEL_PREFIX "")
-  set(example_INSTALL_PREFIX /home/ken/test/install)
+  set(example_INSTALL_PREFIX /home/aa/test/install)
   set(example_PREFIX ${example_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(example_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(example_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ken/test/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/aa/test/install/lib;/home/aa/test/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(example_EXPORTED_TARGETS "")
+set(example_EXPORTED_TARGETS "example_generate_messages_cpp;example_generate_messages_eus;example_generate_messages_lisp;example_generate_messages_nodejs;example_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${example_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND example_EXPORTED_TARGETS ${${example_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "example-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${example_DIR}/${extra})

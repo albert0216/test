@@ -1,8 +1,8 @@
-prefix=/home/ken/test/install
+prefix=/home/aa/test/install
 
 Name: example
 Description: Description of example
 Version: 0.0.0
-Cflags: 
+Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
 Requires: 

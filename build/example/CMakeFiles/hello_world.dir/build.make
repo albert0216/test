@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ken/test/src
+CMAKE_SOURCE_DIR = /home/aa/test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ken/test/build
+CMAKE_BINARY_DIR = /home/aa/test/build
 
 # Include any dependencies generated for this target.
 include example/CMakeFiles/hello_world.dir/depend.make
@@ -58,17 +58,17 @@ include example/CMakeFiles/hello_world.dir/progress.make
 include example/CMakeFiles/hello_world.dir/flags.make
 
 example/CMakeFiles/hello_world.dir/src/hello_world.cpp.o: example/CMakeFiles/hello_world.dir/flags.make
-example/CMakeFiles/hello_world.dir/src/hello_world.cpp.o: /home/ken/test/src/example/src/hello_world.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ken/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/hello_world.dir/src/hello_world.cpp.o"
-	cd /home/ken/test/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_world.dir/src/hello_world.cpp.o -c /home/ken/test/src/example/src/hello_world.cpp
+example/CMakeFiles/hello_world.dir/src/hello_world.cpp.o: /home/aa/test/src/example/src/hello_world.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aa/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/hello_world.dir/src/hello_world.cpp.o"
+	cd /home/aa/test/build/example && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_world.dir/src/hello_world.cpp.o -c /home/aa/test/src/example/src/hello_world.cpp
 
 example/CMakeFiles/hello_world.dir/src/hello_world.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_world.dir/src/hello_world.cpp.i"
-	cd /home/ken/test/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ken/test/src/example/src/hello_world.cpp > CMakeFiles/hello_world.dir/src/hello_world.cpp.i
+	cd /home/aa/test/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aa/test/src/example/src/hello_world.cpp > CMakeFiles/hello_world.dir/src/hello_world.cpp.i
 
 example/CMakeFiles/hello_world.dir/src/hello_world.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_world.dir/src/hello_world.cpp.s"
-	cd /home/ken/test/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ken/test/src/example/src/hello_world.cpp -o CMakeFiles/hello_world.dir/src/hello_world.cpp.s
+	cd /home/aa/test/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aa/test/src/example/src/hello_world.cpp -o CMakeFiles/hello_world.dir/src/hello_world.cpp.s
 
 example/CMakeFiles/hello_world.dir/src/hello_world.cpp.o.requires:
 
@@ -88,32 +88,32 @@ hello_world_OBJECTS = \
 # External object files for target hello_world
 hello_world_EXTERNAL_OBJECTS =
 
-/home/ken/test/devel/lib/example/hello_world: example/CMakeFiles/hello_world.dir/src/hello_world.cpp.o
-/home/ken/test/devel/lib/example/hello_world: example/CMakeFiles/hello_world.dir/build.make
-/home/ken/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/libroscpp.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/ken/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/librosconsole.so
-/home/ken/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/ken/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/ken/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/ken/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/ken/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/librostime.so
-/home/ken/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/libcpp_common.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ken/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ken/test/devel/lib/example/hello_world: example/CMakeFiles/hello_world.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ken/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ken/test/devel/lib/example/hello_world"
-	cd /home/ken/test/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_world.dir/link.txt --verbose=$(VERBOSE)
+/home/aa/test/devel/lib/example/hello_world: example/CMakeFiles/hello_world.dir/src/hello_world.cpp.o
+/home/aa/test/devel/lib/example/hello_world: example/CMakeFiles/hello_world.dir/build.make
+/home/aa/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/libroscpp.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/aa/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/librosconsole.so
+/home/aa/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/aa/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/aa/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/aa/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/aa/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/librostime.so
+/home/aa/test/devel/lib/example/hello_world: /opt/ros/melodic/lib/libcpp_common.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/aa/test/devel/lib/example/hello_world: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/aa/test/devel/lib/example/hello_world: example/CMakeFiles/hello_world.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aa/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/aa/test/devel/lib/example/hello_world"
+	cd /home/aa/test/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_world.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-example/CMakeFiles/hello_world.dir/build: /home/ken/test/devel/lib/example/hello_world
+example/CMakeFiles/hello_world.dir/build: /home/aa/test/devel/lib/example/hello_world
 
 .PHONY : example/CMakeFiles/hello_world.dir/build
 
@@ -122,10 +122,10 @@ example/CMakeFiles/hello_world.dir/requires: example/CMakeFiles/hello_world.dir/
 .PHONY : example/CMakeFiles/hello_world.dir/requires
 
 example/CMakeFiles/hello_world.dir/clean:
-	cd /home/ken/test/build/example && $(CMAKE_COMMAND) -P CMakeFiles/hello_world.dir/cmake_clean.cmake
+	cd /home/aa/test/build/example && $(CMAKE_COMMAND) -P CMakeFiles/hello_world.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/hello_world.dir/clean
 
 example/CMakeFiles/hello_world.dir/depend:
-	cd /home/ken/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ken/test/src /home/ken/test/src/example /home/ken/test/build /home/ken/test/build/example /home/ken/test/build/example/CMakeFiles/hello_world.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aa/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aa/test/src /home/aa/test/src/example /home/aa/test/build /home/aa/test/build/example /home/aa/test/build/example/CMakeFiles/hello_world.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/hello_world.dir/depend
 
