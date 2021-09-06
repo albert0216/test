@@ -1,4 +1,4 @@
-prefix=/home/aa/test/devel
+prefix=/home/ken/test/devel
 
 Name: example
 Description: Description of example

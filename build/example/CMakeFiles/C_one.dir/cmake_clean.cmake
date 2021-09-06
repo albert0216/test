@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/aa/test/devel/lib/example/C_one"
-  "/home/aa/test/devel/lib/example/C_one.pdb"
   "CMakeFiles/C_one.dir/src/C_one.cpp.o"
+  "/home/ken/test/devel/lib/example/C_one.pdb"
+  "/home/ken/test/devel/lib/example/C_one"
 )
 
 # Per-language clean rules from dependency scanning.

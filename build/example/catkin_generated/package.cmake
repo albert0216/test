@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "example")
 set(example_VERSION "0.0.0")
-set(example_MAINTAINER "aa <aa@todo.todo>")
+set(example_MAINTAINER "ken <ken@todo.todo>")
 set(example_PACKAGE_FORMAT "2")
 set(example_BUILD_DEPENDS "message_generation" "roscpp" "std_msgs")
 set(example_BUILD_EXPORT_DEPENDS "roscpp" "std_msgs")

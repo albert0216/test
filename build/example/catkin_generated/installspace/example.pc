@@ -1,4 +1,4 @@
-prefix=/home/aa/test/install
+prefix=/home/ken/test/install
 
 Name: example
 Description: Description of example
